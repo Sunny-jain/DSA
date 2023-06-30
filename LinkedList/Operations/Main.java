@@ -8,7 +8,7 @@ class Main {
         list.insert(7);
         list.insertPosi(6, 2);
         list.insertFirst(1);
-        list.deleteNode(4);
+        list.deleteAllNode(4);
         list.show();
     }   
 }

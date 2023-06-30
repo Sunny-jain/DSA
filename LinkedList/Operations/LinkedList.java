@@ -42,7 +42,22 @@ public class LinkedList {
         head = newNode;
     }
 
-    public void deleteNode(int val){
+    public void deleteAllNode(int val){
+        Node node = head;
+        Node prev = head;
+        int flag = 0;
+        while(node.next != null){
+            prev = node;
+            node = node.next;
+            if(node.val == val){
+                prev.next = node.next;
+                System.out.println("element removed " + val);
+                flag = 1;
+            }
+        }
+        if(flag == 0){
+            System.out.println("element not found");
+        }
         
     }
 }
